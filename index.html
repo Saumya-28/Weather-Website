@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather Website</title>
+    
+    <link rel="icon" href="favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Weather Website</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About and more</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="https://www.thehindu.com/">Daily News</a></li>
+                    <li><a class="dropdown-item" href="https://www.astroyogi.com/horoscopes/daily">Daily Horoscope</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="about.html">About the Website</a></li>
+                  </ul>
+              </li>
+
+              
+            </ul>
+            <form class="d-flex" role="search">
+              <input id="city" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit" id="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container">
+       <h1 style="color:  #00ABB3;" class="my-4 text-center">Weather For <span id="cityName"></span></h1>
+       <main>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+              <div style="background-color: #FF7272; " class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                  <h4 class="my-0 fw-normal">TEMPERATURES</h4>
+                </div>
+                <div style="background-color: #FFF76A;" class="card-body">
+                  <h1 class="card-title"><span id="temp2"></span><small class="text-muted fw-light">	℃</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>Temperature is <span id="temp"></span></li>
+                    <li>Minimum Temperature is <span id="min_temp"></span></li>
+                    <li>Maximum Temperature is <span id="max_temp"></span></li>
+                    
+                  </ul>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div style="background-color: #B9F3FC;" class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                  <h4 class="my-0 fw-normal">HUMIDITY INFO</h4>
+                </div>
+                <div style="background-color: #7aff5c" class="card-body">
+                  <h1 class="card-title pricing-card-title"><span id="humidity2"></span><small class="text-muted fw-light"> %</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>Cloud PCT is <span id="cloud_pct"></span></li>
+                    <li>Feels Like  <span id="feels_like"></span></li>
+                    <li>Humidity is <span id="humidity"></span></li>
+                    
+                  </ul>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div style="background-color: #f8b9fa;" class="card mb-4 rounded-3 shadow-sm ">
+                <div class="card-header py-3 ">
+                  <h4 class="my-0 fw-normal">WIND INFO</h4>
+                </div>
+                <div style="background-color:#219bff" class="card-body">
+                  <h1 class="card-title pricing-card-title"><span id="wind_speed2"></span><small class="text-muted fw-light"> km/h</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>Wind Speed is <span id="wind_speed"></span></li>
+                    <li>Wind Degrees is <span id="wind_degrees"></span></li>
+                    
+                    
+                  </ul>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          </div>
+          </main>
+      </div>
+      <div style="background-color:#E5E0FF; padding: 5% ; " class="bottom-container">
+        <p style="margin-bottom: 0%;padding-left:35%">© 2023 Saumya Bhattacharya.All Rights Reserved.</p>
+      </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
